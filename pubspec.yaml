@@ -1,0 +1,46 @@
+name: mini
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  intl: ^0.18.0 # Add this line
+  http: ^1.2.2 
+
+  cupertino_icons: ^1.0.8
+  firebase_core: ^3.8.0
+  firebase_auth: ^5.3.3
+  cloud_firestore: ^5.5.0
+  
+  flutter_sms: ^2.3.3
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  assets:
+    - lib/images/logo.png
+    - lib/images/emptyprofile.png
+    - lib/images/medicine.png
+    - lib/images/medicinea.png
+    - lib/images/medicineb.png
+    - lib/images/medicinec.png
+    - lib/images/medicined.png
+    - lib/images/default.png
+    - lib/images/doctor1.jpg
+    - lib/images/doctor2.jpg
+    - lib/images/police.jpg
+    - lib/images/hospital.jpg
+    - lib/images/petrol.jpg
+
+  uses-material-design: true

@@ -17,7 +17,6 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: ListView(
@@ -28,7 +27,8 @@ class _ProfilePageState extends State<ProfilePage> {
                 children: [
                   CircleAvatar(
                     radius: 60,
-                    backgroundImage: AssetImage('lib/images/emptyprofile.png'), // Replace with actual image
+                    backgroundImage: AssetImage(
+                        'lib/images/default.png'), // Replace with actual image
                   ),
                   Positioned(
                     bottom: 0,
@@ -58,7 +58,8 @@ class _ProfilePageState extends State<ProfilePage> {
             // User Info Card
             Card(
               elevation: 5,
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15)),
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
@@ -69,7 +70,8 @@ class _ProfilePageState extends State<ProfilePage> {
                         SizedBox(width: 10),
                         Text(
                           userName,
-                          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                          style: TextStyle(
+                              fontSize: 24, fontWeight: FontWeight.bold),
                         ),
                       ],
                     ),
@@ -121,9 +123,11 @@ class _ProfilePageState extends State<ProfilePage> {
               icon: Icon(Icons.edit),
               label: Text('Edit Profile'),
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.blueAccent, // Use backgroundColor instead of primary
+                backgroundColor:
+                    Colors.blueAccent, // Use backgroundColor instead of primary
                 padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15)),
               ),
             ),
             SizedBox(height: 20),
@@ -137,9 +141,11 @@ class _ProfilePageState extends State<ProfilePage> {
               icon: Icon(Icons.logout),
               label: Text('Log Out'),
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.redAccent, // Use backgroundColor instead of primary
+                backgroundColor:
+                    Colors.redAccent, // Use backgroundColor instead of primary
                 padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15)),
               ),
             ),
             SizedBox(height: 30),
@@ -160,10 +166,14 @@ class _ProfilePageState extends State<ProfilePage> {
 
   // Function to show the edit profile dialog
   void _showEditProfileDialog(BuildContext context) {
-    TextEditingController nameController = TextEditingController(text: userName);
-    TextEditingController emailController = TextEditingController(text: userEmail);
-    TextEditingController phoneController = TextEditingController(text: userPhone);
-    TextEditingController locationController = TextEditingController(text: userLocation);
+    TextEditingController nameController =
+        TextEditingController(text: userName);
+    TextEditingController emailController =
+        TextEditingController(text: userEmail);
+    TextEditingController phoneController =
+        TextEditingController(text: userPhone);
+    TextEditingController locationController =
+        TextEditingController(text: userLocation);
 
     showDialog(
       context: context,

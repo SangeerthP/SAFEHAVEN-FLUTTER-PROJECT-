@@ -3,7 +3,7 @@ import 'sos_page.dart';
 import 'info_page.dart';
 import 'safe_places_page.dart'; // Import the new Safe Places page
 import 'profile_page.dart';
-import 'medicine/online.dart'; // Import the Online Page (for medicine section)
+// Import the Online Page (for medicine section)
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
